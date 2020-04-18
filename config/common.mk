@@ -170,6 +170,7 @@ include vendor/aosp/config/ota.mk
 # Face Unlock
 ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
 TARGET_FACE_UNLOCK_SUPPORTED := false
+ifeq (,$(filter $(TARGET_ARCH), arm64))
 ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
 PRODUCT_PACKAGES += \
     FaceUnlockService
