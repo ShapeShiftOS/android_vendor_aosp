@@ -182,6 +182,10 @@ PRODUCT_PACKAGES += \
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
+# Ad-blocking
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/hosts.adaway_adblock:system/etc/hosts.adaway_adblock
+
 # PixelLiveWallpaper
 ifeq ($(TARGET_PIXEL_LWP),true)
 PRODUCT_PACKAGES += \
