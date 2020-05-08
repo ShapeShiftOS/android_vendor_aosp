@@ -193,7 +193,6 @@ include vendor/google-customization/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
-# Ad-block hosts
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/hosts.aicp_adblock:system/etc/hosts.aicp_adblock
-
+# AICP Ad-block
+PRODUCT_PACKAGES += \
+    hosts.aicp_adblock
