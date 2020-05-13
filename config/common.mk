@@ -158,6 +158,9 @@ PRODUCT_PACKAGES += \
     NavBarGesturalWideBackNoPillOverlay \
     NavBarGesturalExtraWideBackNoPillOverlay
 
+# Overlays
+include vendor/aosp/overlay/overlays.mk
+
 # Branding
 include vendor/aosp/config/branding.mk
 
@@ -169,6 +172,9 @@ include vendor/gapps/config.mk
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
+
+# Prebuilts
+include vendor/prebuilts/packages.mk
 
 # Customization
 include vendor/google-customization/config.mk
