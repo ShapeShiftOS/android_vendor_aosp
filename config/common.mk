@@ -155,7 +155,7 @@ include vendor/gapps/config.mk
 include vendor/pixelstyle/config.mk
 
 # Customization
-include vendor/google/customization/config.mk
+include vendor/google-customization/config.mk
 
 # Screenshot permissions
 PRODUCT_COPY_FILES += \
