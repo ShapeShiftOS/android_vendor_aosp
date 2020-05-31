@@ -160,7 +160,9 @@ PRODUCT_PACKAGES += \
     NavBarGesturalExtraWideBackNoPillOverlay
 
 # Lawnchair
+ifeq ($(LAWNCHAIR_OPTOUT),)
 include vendor/lawnchair/lawnchair.mk
+endif
 
 # Face Unlock
 ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
