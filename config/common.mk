@@ -206,6 +206,8 @@ endif
 # GApps
 include vendor/gapps/config.mk
 
+include packages/apps/Plugins/plugins.mk
+
 # Custom Packages
 PRODUCT_PACKAGES += \
     StitchImage
@@ -217,3 +219,4 @@ include vendor/pixelstyle/config.mk
 include vendor/google-customization/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
