@@ -164,6 +164,11 @@ ifeq ($(LAWNCHAIR_OPTOUT),)
 include vendor/lawnchair/lawnchair.mk
 endif
 
+# OPLauncher
+ifeq ($(LAWNCHAIR_OPTOUT), true)
+include vendor/oplauncher/OPLauncher2.mk
+endif
+
 # Face Unlock
 ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
 TARGET_FACE_UNLOCK_SUPPORTED := false
