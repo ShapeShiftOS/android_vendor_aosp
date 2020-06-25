@@ -206,8 +206,6 @@ endif
 # GApps
 include vendor/gapps/config.mk
 
-include packages/apps/Plugins/plugins.mk
-
 # Custom Packages
 PRODUCT_PACKAGES += \
     StitchImage
