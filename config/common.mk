@@ -190,6 +190,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 endif
 
+#TempHAX
+BUILD_BROKEN_DUP_RULES := true
+
 # GApps
 include vendor/gapps/config.mk
 
