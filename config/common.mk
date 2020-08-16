@@ -139,13 +139,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BrightnessSliderOverlay
 
-# NavigationBar Gestural Mode No Pill Overlays
-PRODUCT_PACKAGES += \
-    NavBarGesturalNoPillOverlay \
-    NavBarGesturalNarrowBackNoPillOverlay \
-    NavBarGesturalWideBackNoPillOverlay \
-    NavBarGesturalExtraWideBackNoPillOverlay
-
 # Lawnchair
 ifeq ($(LAWNCHAIR_OPTOUT),)
 include vendor/lawnchair/lawnchair.mk
