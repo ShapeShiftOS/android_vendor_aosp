@@ -80,7 +80,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.potato.overlay.lawnconf
 
 # Lawnchair Default Configuration
-ifeq ($(LAWNCHAIR_OPTOUT),)
+ifeq ($(TARGET_LAUNCHER_CHOICE),)
 PRODUCT_PACKAGES += \
     LawnConf
 endif
@@ -139,16 +139,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BrightnessSliderOverlay
 
-# Lawnchair
-ifeq ($(LAWNCHAIR_OPTOUT),)
-include vendor/lawnchair/lawnchair.mk
-endif
-
-# OPLauncher
-ifeq ($(LAWNCHAIR_OPTOUT), true)
-include vendor/oplauncher/OPLauncher2.mk
-endif
-
 # Face Unlock
 ifeq ($(CUSTOM_BUILD_TYPE), OFFICIAL)
 TARGET_FACE_UNLOCK_SUPPORTED := false
@@ -182,9 +172,6 @@ endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 endif
-
-#TempHAX
-BUILD_BROKEN_DUP_RULES := true
 
 # GApps
 include vendor/gapps/config.mk
