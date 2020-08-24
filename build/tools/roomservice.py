@@ -41,12 +41,13 @@ except ImportError:
     urllib.request = urllib2
 
 DEBUG = False
+default_manifest = ".repo/manifest.xml"
 
-custom_local_manifest = ".repo/local_manifests/pixel.xml"
+custom_local_manifest = ".repo/local_manifests/exui.xml"
 custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 'ten')
 custom_dependencies = "aosp.dependencies"
-org_manifest = "exui-devices"  # leave empty if org is provided in manifest
-org_display = "Extended-UI-Devices"  # needed for displaying
+org_manifest = "ssos-devices"  # leave empty if org is provided in manifest
+org_display = "ShapeShiftOS-Devices"  # needed for displaying
 
 github_auth = None
 
