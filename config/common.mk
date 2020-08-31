@@ -178,7 +178,8 @@ include vendor/gapps/config.mk
 
 # Custom Packages
 PRODUCT_PACKAGES += \
-    StitchImage
+    StitchImage \
+    ThemePicker
 
 # Pixel Style
 include vendor/pixelstyle/config.mk
