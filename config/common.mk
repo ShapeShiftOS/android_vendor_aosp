@@ -172,7 +172,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 # GApps
-include vendor/gapps/config.mk
+include vendor/aosp/config/gapps.mk
 
 # Custom Packages
 PRODUCT_PACKAGES += \
